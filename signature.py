@@ -48,8 +48,7 @@ class cloop(object):
             + "-"
             + _phone[9:11]
         )  # +7+(915)350-99-08
-        _phone9dost
-	https://api-prime.anytime.global/api/v2/auth/sendVerificationCodeista = (
+        _phone9dostavista = (
             _phone9[:3] + "+" + _phone9[3:6] + "-" + _phone9[6:8] + "-" + _phone9[8:10]
         )  # 915+350-99-08
         _phoneOstin = (
