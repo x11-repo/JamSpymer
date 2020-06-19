@@ -1,4 +1,4 @@
-from colorama import *
+from colorama import * 
 import requests
 import threading
 from threading import Timer, Thread
