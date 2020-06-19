@@ -37,14 +37,19 @@
 
   + ***Установка***
     + *Просто выполните команды в терминале:*
-    + *Termux: cd && pkg update && pkg upgrade && pkg install pip && pkg install python3-pip && pip install -r requirements.txt && git clone https://github.com/x11-repo/jamspymer.git && cd ~/JamSpymer && python3 JamSpymer.py*
+    + *Termux: 
+    ```
+    curl raw.githubusercontent.com/x11-repo/JamSpymer/master/termux.sh
+    bash termux.sh
+    ```
+    + *Linux: 
+    ```
+    raw.githubusercontent.com/x11-repo/JamSpymer/master/other.sh
+    bash other.sh
+    ```
     
-    + *Other: cd && apt update && apt upgrade && apt install pip && apt install python3-pip && pip install -r requirements.txt && git clone https://github.com/x11-repo/jamspymer.git && cd ~/JamSpymer && python3 JamSpymer.py*
-
-
-  + ***Запуск на любой ОС***
-    + *cd JamSpymer*
-    + *python3 JamSpymer.py*
+    + *Windows: Просто скачайте exe из вкладки релизов
+   
  
 ![Polosa](https://user-images.githubusercontent.com/61265099/78818286-19743180-79dd-11ea-84c5-f629f891dd4b.png)
 
