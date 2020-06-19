@@ -43,13 +43,14 @@
     + *Просто выполните команды в терминале:*
     + *Termux:*
     ```
-    curl https://kutt.it/jamterm -O
-    bash termux.sh
+    pkg install wget
+    wget https://kutt.it/jamterm
+    bash jamterm
     ```
     + *Linux:*
     ```
-    curl https://kutt.it/jamother -O
-    bash other.sh
+    wget https://kutt.it/jamother
+    bash jamother
     ```
     
     + *Windows: Просто скачайте exe из вкладки релизов*
