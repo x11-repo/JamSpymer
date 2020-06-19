@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# ИДИ НАХУЙ ОТ МОЕГО ГОВНОКОДА ГОВНЮК
+# ИДИ НАХУЙ ОТ МОЕГО ГОВНОКОДА ГОВНЮК (ОК УЖЕ ИДУ)
 import time
 import os
 import datetime
@@ -136,6 +136,10 @@ def main():
         main()
     elif new >= "99":
         exit()
+    else:
+	print("Неверный код, попробуйте еще раз.")
+	time.sleep(3)
+	main()
 
 
 os.system("cls")
