@@ -57,7 +57,7 @@
     bash jamother
     ```
     
-    + *Windows: [Просто скачайте exe](https://github.com/x11-repo/JamSpymer/releases/tag/0.3.1Beta)
+    + *Windows: [Просто скачайте exe](https://github.com/x11-repo/JamSpymer/releases/tag/0.3.1Beta)*
    
  
 ![Polosa](https://user-images.githubusercontent.com/61265099/78818286-19743180-79dd-11ea-84c5-f629f891dd4b.png)
