@@ -1,7 +1,7 @@
 # 🟣 JamSpymer Beta 🟣 
 
 
-## Релиз 0.3 Beta уже в сети!
+## Релиз 0.3.1 Beta уже в сети!
 
 ![Analisy](https://img.shields.io/badge/quality-4.862-success)
 [![Passing: build](https://img.shields.io/badge/build-passing-green.svg)](https://img.shields.io/badge/build-passing-green)
@@ -26,6 +26,10 @@
 #### Со временем ***сервисы будут добавлятся, а баги исправлятся***
 
 ![Polosa](https://user-images.githubusercontent.com/61265099/78818286-19743180-79dd-11ea-84c5-f629f891dd4b.png)
+
++ **Обновление 0.3.1 Beta от 19.06.20**
+  + *Bug fixed*
+  + *Новая прогрузка*
 
 + **Обновление 0.3 Beta от 19.06.20**
   + *Рефакторинг кода*

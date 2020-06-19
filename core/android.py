@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-# ИДИ НАХУЙ ОТ МОЕГО ГОВНОКОДА ГОВНЮК (ОК УЖЕ ИДУ)
+# x11repo: ИДИ НАХУЙ ОТ МОЕГО ГОВНОКОДА ГОВНЮК
+# flexagoon: ОК УЖЕ ИДУ
+# x11repo: Не звани, от тебя говной воняет, через телефон чувствую
 import time
 import os
 import datetime
@@ -46,10 +48,21 @@ def main():
         print(f"Будет доступно в скором обновлении.")
         time.sleep(3)
         main()
-
-    xxx = 3
+    r1 = random.choice([r, m, y])
+    r2 = random.choice([b, g, c])
+    r3 = random.choice([r, m, y, b, g, c])
+    rst1 = random.choice([b, w, m, c])
+    rst2 = random.choice([b, w, m, c])
+    rst3 = random.choice([b, w, m, c])
+    rst4 = random.choice([b, w, m, c])
+    rst5 = random.choice([b, w, m, c])
+    rst6 = random.choice([b, w, m, c])
+    rst7 = random.choice([b, w, m, c])
+    rst8 = random.choice([b, w, m, c])
+    rst9 = random.choice([b, w, m, c])
+    rst10 = random.choice([b, w, m, c])
     loading = 0
-    for xxx in range(xxx):
+    while loading != 7:
         r1 = random.choice([r, m, y])
         r2 = random.choice([b, g, c])
         r3 = random.choice([r, m, y, b, g, c])
@@ -91,14 +104,8 @@ def main():
 ┃ {g}99{sr}. Выход           {rst1}*      {r3}┃
 ╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯{sr}"""
         )
-        loading = loading + 1
-        if loading == 1:
-            print(f"\n\nПрогрузка модулей: {g}####{sr} 20%")
-        elif loading == 2:
-            print(f"\n\nПрогрузка модулей: {g}############{sr} 60%")
-        elif loading == 3:
-            print(f"\n\nПрогрузка модулей: {g}####################{sr}  100%")
-        time.sleep(1)
+        loading += 1
+        time.sleep(0.3)
 
     now = datetime.datetime.now()
     times = now.strftime("%H:%M")
@@ -137,9 +144,9 @@ def main():
     elif new >= "99":
         exit()
     else:
-	print("Неверный код, попробуйте еще раз.")
-	time.sleep(3)
-	main()
+        print("Неверный код, попробуйте еще раз.")
+        time.sleep(3)
+        main()
 
 
 os.system("cls")
@@ -168,7 +175,3 @@ elif code == "qq":
     print("Запуск...")
     time.sleep(1)
     main()
-
-else:
-    print("Введен неверный код.")
-    pass
