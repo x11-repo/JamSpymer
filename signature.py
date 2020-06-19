@@ -4,7 +4,6 @@ import threading
 from threading import Timer, Thread
 from datetime import datetime, timedelta
 import random
-from fake_useragent import UserAgent
 import os
 import time
 from random_useragent import get_agent
