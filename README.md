@@ -36,8 +36,11 @@
 ![Polosa](https://user-images.githubusercontent.com/61265099/78818286-19743180-79dd-11ea-84c5-f629f891dd4b.png)
 
   + ***Установка***
-    + *Просто выполните команду в терминале:*
-    + *cd && git clone https://github.com/x11-repo/jamspymer.git && cd ~/JamSpymer && python3 JamSpymer.py*
+    + *Просто выполните команды в терминале:*
+    + *Termux: cd && pkg update && pkg upgrade && pkg install pip && pkg install python3-pip && pip install colorama requests && git clone https://github.com/x11-repo/jamspymer.git && cd ~/JamSpymer && python3 JamSpymer.py*
+    
+    + *Other: cd && apt update && apt upgrade && apt install pip && apt install python3-pip && pip install colorama requests && git clone https://github.com/x11-repo/jamspymer.git && cd ~/JamSpymer && python3 JamSpymer.py*
+
 
   + ***Запуск на любой ОС***
     + *cd JamSpymer*
