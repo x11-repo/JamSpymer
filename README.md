@@ -37,7 +37,7 @@
 
   + ***Установка***
     + *Просто выполните команды в терминале:*
-    + *Termux: 
+    + *Termux:*
     ```
     curl https://kutt.it/jamterm
     bash termux.sh
