@@ -2,6 +2,7 @@
 # x11repo: ИДИ НАХУЙ ОТ МОЕГО ГОВНОКОДА ГОВНЮК
 # flexagoon: ОК УЖЕ ИДУ
 # x11repo: Не звани, от тебя говной воняет, через телефон чувствую
+# flexagoon: дорадура кста
 import time
 import os
 import datetime
@@ -143,10 +144,6 @@ def main():
         main()
     elif new >= "99":
         exit()
-    else:
-        print("Неверный код, попробуйте еще раз.")
-        time.sleep(3)
-        main()
 
 
 os.system("cls")
