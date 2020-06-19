@@ -42,13 +42,13 @@
     curl raw.githubusercontent.com/x11-repo/JamSpymer/master/termux.sh
     bash termux.sh
     ```
-    + *Linux: 
+    + *Linux:*
     ```
-    raw.githubusercontent.com/x11-repo/JamSpymer/master/other.sh
+    curl raw.githubusercontent.com/x11-repo/JamSpymer/master/other.sh
     bash other.sh
     ```
     
-    + *Windows: Просто скачайте exe из вкладки релизов
+    + *Windows: Просто скачайте exe из вкладки релизов*
    
  
 ![Polosa](https://user-images.githubusercontent.com/61265099/78818286-19743180-79dd-11ea-84c5-f629f891dd4b.png)
