@@ -39,12 +39,12 @@
     + *Просто выполните команды в терминале:*
     + *Termux: 
     ```
-    curl raw.githubusercontent.com/x11-repo/JamSpymer/master/termux.sh
+    curl https://kutt.it/jamterm
     bash termux.sh
     ```
     + *Linux:*
     ```
-    curl raw.githubusercontent.com/x11-repo/JamSpymer/master/other.sh
+    curl https://kutt.it/jamother
     bash other.sh
     ```
     
