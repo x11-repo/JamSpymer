@@ -1,7 +1,7 @@
 # 🟣 JamSpymer Beta 🟣 
 
 
-## Релиз 0.3.1 Beta уже в сети!
+## Релиз 0.4 Beta уже в сети!
 
 ![Analisy](https://img.shields.io/badge/quality-4.862-success)
 [![Passing: build](https://img.shields.io/badge/build-passing-green.svg)](https://img.shields.io/badge/build-passing-green)
